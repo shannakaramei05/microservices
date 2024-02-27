@@ -1,0 +1,14 @@
+POST http://localhost:8080/v1/api/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="aw.png"
+Content-Type: image/png
+
+< C:/Users/weed/Pictures/Screenshots/aw.png
+--WebAppBoundary--
+Content-Disposition: form-data; name="fileName"
+
+myImage
+--WebAppBoundary--
+###
